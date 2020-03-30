@@ -36,6 +36,14 @@ spring:
     testOnBorrow: false
     testOnReturn: false
 
+# activeMQ
+# failover:(tcp://localhost:61616,tcp://localhost:61617)
+# tcp://localhost:61616
+ activemq:
+  broker-url: tcp://localhost:61616
+  user: admin
+  password: admin
+
 # mybatis 配置
 mybatis:
   # dao.xml的位置

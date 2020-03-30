@@ -2,6 +2,7 @@ package com.coder520.mamabike;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.jms.annotation.EnableJms;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 /**
@@ -10,6 +11,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @SpringBootApplication
 // 开启事务
 @EnableTransactionManagement
+// 启动消息队列
+@EnableJms
 public class MamabikeApplication {
 
     public static void main(String[] args) {
