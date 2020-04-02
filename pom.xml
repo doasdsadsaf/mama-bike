@@ -87,8 +87,27 @@
             <version>5.15.0</version>
         </dependency>
 
+        <!-- netty-->
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>4.1.6.Final</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>0.9.3</version>
+        </dependency>
+
     </dependencies>
 
+    <repositories>
+        <repository>
+            <id>projectlombok.org</id>
+            <url>http://projectlombok.org/mavenrepo</url>
+        </repository>
+    </repositories>
     <build>
         <!--配置打包时把xml也给打包-->
         <resources>
